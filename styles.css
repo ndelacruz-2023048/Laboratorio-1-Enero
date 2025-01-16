@@ -315,3 +315,326 @@ header {
     background-image: linear-gradient(to right,transparent 0%, transparent 50%,rgb(44 64 117) 50%,  rgb(44 64 117) 100%),url("./sources/128120_bc170bf192b345b7906419cf32197d66~mv2.webp");
     background-position: 50% 60%;
 }
+
+/*Main*/
+
+.container_academy{
+    display: flex;
+    overflow: hidden;
+}
+
+.academy{
+    display: grid;
+    flex-shrink: 0;
+    place-items: center;
+    height: 100vh;
+}
+
+.ciclo_basico{
+    width: 100%;
+}
+
+.ciclo_basico > div{
+    width: 80%;
+    background-color: rgb(161, 47, 97);
+    height: 80%;
+    display: flex;
+    border-radius: 40px;
+}
+
+
+.ciclo_basico-azul> div{
+    background-color: rgb(26, 61, 132);
+}
+
+.ciclo_basico-amarillo > div{
+    background-color: rgb(246, 160, 0);
+}
+
+.ciclo_basico-azulfuerte > div{
+    background-color: rgb(11, 35, 99);
+}
+
+.ciclo_basico-rojo > div{
+    background-color: rgb(139 5 5);
+}
+
+.ciclo_basico_col1{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    position: relative;
+}
+
+.ciclo_basico_col2{
+    width: 35%;
+    display: flex;
+    justify-content: start;
+}
+
+.container_ciclo_basico{
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    width: 70%;
+}
+
+.ciclo_basico_title{
+    color: #FDFCFD;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.ciclo_basico_paragraph{
+    color: #FDFCFD;
+    font-size: 25px;
+}
+.ciclo_basico_button{
+    border: 1px solid #FDFCFD;
+    color: #FDFCFD;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 150px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.ciclo_basico_button:hover{
+    background-color: #FDFCFD;
+    color: #000;
+}
+
+.ciclo_basico_number{
+    width: 10%;
+    height: 12%;
+    background-color: #FDFCFD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(161, 47, 97);
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 25px;
+}
+
+.ciclo_basico_number-azul{
+    color: rgb(26, 61, 132);
+}
+
+.ciclo_basico_number-amarillo{
+    color: rgb(238, 158, 10);
+}
+
+.ciclo_basico_number-azulfuerte{
+    color: rgb(11, 35, 99);
+}
+
+.ciclo_basico_number-rojo{
+    color: rgb(139 5 5)
+}
+
+
+.ciclo_basico_img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.div2{
+    background-color: blue;
+    width: 100%;
+}
+
+.square{
+    width: 150px;
+    height: 150px;
+    background-color: fuchsia;
+}
+.square2{
+    margin-top: 300px;
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+}
+
+.partners{
+    background-color: #20346bff;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_partner{
+    width: 30%;
+}
+.container_partner_title{
+    color: #FDFCFD;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.container_partner_paragraph{
+    color: #FDFCFD;
+    text-align: center;
+    line-height: 25px;
+}
+
+.partners img{
+    position: absolute;
+}
+
+.partener_autodesk{
+    top: 10%;
+    animation:initialAnimation 2s ease-out, moveLeftAutodesk 2s infinite alternate; 
+    width: 270px;
+    left: 5%;
+}
+
+.partener_cisco{
+    top: 30%;
+    animation: moveLeftCisco 2s infinite alternate; 
+    width: 270px;
+    left: 15%;
+}
+
+.partener_dynEd{
+    top: 78%;
+    width: 309px;
+    left: 32%;
+    animation: moveLeftDynEd 2s infinite alternate;
+
+}
+
+.partener_honda{
+    top: 13%;
+    width: 312px;
+    left: 40%;
+    animation: moveCenterHonda 2s infinite alternate;
+}
+
+.partener_oracle{
+    top: 60%;
+    width: 270px;
+    left: 9%;
+    animation: moveRightOracle 2s infinite alternate;
+}
+
+.partener_pearson_vue{
+    top: 70%;
+    width: 270px;
+    left: 55%;
+    animation: moveLeftPearsonVue 2s infinite alternate;
+}
+
+.partener_toefl{
+    top: 26%;
+    width: 270px;
+    right: 20%;
+    animation: moveRightToefl 2s infinite alternate;
+}
+
+.partener_universidad_istmo{
+    top: 55%;
+    width: 270px;
+    right: 8%;
+    animation: moveRightIstmo 2s infinite alternate;
+}
+
+.partener_vmware{
+    top: 8%;
+    width: 270px;
+    right: 5%;
+    animation: moveRightVmware 2s infinite alternate;
+}
+
+
+
+@keyframes moveLeftAutodesk {
+  0% {
+    top: 5%;
+  }
+  100% {
+    top: 10%; /* Se mueve hasta el borde derecho */
+  }
+}
+@keyframes initialAnimation {
+  0% {
+    top: 29%;
+    left: 35%;
+  }
+  100% {
+    top: 10%; /* Se mueve hasta el borde derecho */
+    left: 5%;
+  }
+}
+@keyframes moveLeftCisco {
+  0% {
+    left: 18%;
+  }
+  100% {
+    left: 12%; /* Se mueve hasta el borde derecho */
+  }
+}
+
+@keyframes moveLeftDynEd {
+    0% {
+        top: 73%;
+    }
+    100% {
+        top: 78%; /* Se mueve hasta el borde derecho */
+    }
+  }
+@keyframes moveRightOracle {
+    0% {
+      left: 9%;
+    }
+    100% {
+      left: 15%; /* Se mueve hasta el borde derecho */
+    }
+  }
+@keyframes moveCenterHonda {
+    0% {
+        left: 36%;
+    }
+    100% {
+        left: 39%; /* Se mueve hasta el borde derecho */
+    }
+  }
+@keyframes moveLeftPearsonVue{
+    0% {
+      left: 55%;
+    }
+    100% {
+      left: 50%; /* Se mueve hasta el borde derecho */
+    }
+  }
+@keyframes moveRightToefl{
+    0% {
+      right: 22%;
+    }
+    100% {
+      right: 20%; /* Se mueve hasta el borde derecho */
+    }
+  }
+@keyframes moveRightVmware{
+    0% {
+        top: 12%;
+    }
+    100% {
+        top: 8%; /* Se mueve hasta el borde derecho */
+    }
+  }
+@keyframes moveRightIstmo{
+    0% {
+        top: 55%;
+    }
+    100% {
+        top: 58%; /* Se mueve hasta el borde derecho */
+    }
+  }

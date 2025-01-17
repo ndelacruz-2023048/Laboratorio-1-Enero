@@ -318,128 +318,94 @@ header {
 
 /*Main*/
 
-.container_academy{
-    display: flex;
-    overflow: hidden;
-}
-
 .academy{
-    display: grid;
-    flex-shrink: 0;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     height: 100vh;
-}
-
-.ciclo_basico{
-    width: 100%;
-}
-
-.ciclo_basico > div{
-    width: 80%;
-    background-color: rgb(161, 47, 97);
-    height: 80%;
-    display: flex;
-    border-radius: 40px;
-}
-
-
-.ciclo_basico-azul> div{
-    background-color: rgb(26, 61, 132);
-}
-
-.ciclo_basico-amarillo > div{
-    background-color: rgb(246, 160, 0);
-}
-
-.ciclo_basico-azulfuerte > div{
-    background-color: rgb(11, 35, 99);
-}
-
-.ciclo_basico-rojo > div{
-    background-color: rgb(139 5 5);
-}
-
-.ciclo_basico_col1{
-    display: flex;
-    flex-direction: column;
-    width: 65%;
     position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(1200px);
+    width: 95%;
+    margin: 0 auto;
 }
 
-.ciclo_basico_col2{
-    width: 35%;
+.academy_card{
     display: flex;
-    justify-content: start;
-}
-
-.container_ciclo_basico{
-    display: flex;
+    width: 20%;
     flex-direction: column;
-    margin: auto auto;
-    width: 70%;
-}
-
-.ciclo_basico_title{
-    color: #FDFCFD;
-    font-weight: 700;
-    font-size: 40px;
-}
-
-.ciclo_basico_paragraph{
-    color: #FDFCFD;
-    font-size: 25px;
-}
-.ciclo_basico_button{
-    border: 1px solid #FDFCFD;
-    color: #FDFCFD;
-    padding: 10px 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-    width: 150px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.ciclo_basico_button:hover{
-    background-color: #FDFCFD;
-    color: #000;
-}
-
-.ciclo_basico_number{
-    width: 10%;
-    height: 12%;
-    background-color: #FDFCFD;
-    display: flex;
+    background-color: rgb(137 19 66);
     justify-content: center;
     align-items: center;
-    color: rgb(161, 47, 97);
-    border-radius: 50%;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    font-size: 25px;
+    border-radius: 40px;
+    height: 60%;
+}
+.academy_card_title{
+    color: #FDFCFD;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 15px;
 }
 
-.ciclo_basico_number-azul{
-    color: rgb(26, 61, 132);
+.academy_card_paragraph{
+    color: #FDFCFD;
+    text-align: center;
+    padding: 10px;
 }
 
-.ciclo_basico_number-amarillo{
-    color: rgb(238, 158, 10);
+.academy_card_img{
+    width: 80%;
+
 }
 
-.ciclo_basico_number-azulfuerte{
-    color: rgb(11, 35, 99);
+.academy_card-basico{
+    transform: rotateY(66deg);
+    transition: all 0.8s ease;
 }
 
-.ciclo_basico_number-rojo{
-    color: rgb(139 5 5)
+.academy_card-basico:hover{
+    transform: rotateY(78deg);
 }
 
+.academy_card-diversificado{
+    background-color: rgb(28, 51, 123);
+    transform: rotateY(45deg);
+    transition: all 0.8s ease;
+}
 
-.ciclo_basico_img{
-    width: 100%;
-    object-fit: contain;
+.academy_card-diversificado:hover{
+    transform: rotateY(55deg);
+}
+
+.academy_card-escuelatecnica{
+    background-color: rgb(227, 155, 22);
+    transform: translateY(84px);
+    transition: all 0.8s ease;
+}
+
+.academy_card-escuelatecnica:hover{
+    transform: scaleY(1);
+}
+
+.academy_card-negocio{
+    background-color: rgb(21, 39, 90);
+    transform: rotateY(-45deg);
+    transition: all 0.8s ease;
+}
+
+.academy_card-negocio:hover{
+    transform: rotateY(-55deg);
+}
+
+.academy_card-universitario{
+    background-color: rgb(144, 21, 65);
+    transform: rotateY(-66deg);
+    transition: all 0.8s ease;
+}
+
+.academy_card-universitario:hover{
+    transform: rotateY(-78deg);
 }
 
 .div2{
@@ -491,7 +457,7 @@ header {
 
 .partener_autodesk{
     top: 10%;
-    animation:initialAnimation 2s ease-out, moveLeftAutodesk 2s infinite alternate; 
+    animation:moveLeftAutodesk 2s infinite alternate; 
     width: 270px;
     left: 5%;
 }
@@ -563,16 +529,6 @@ header {
     top: 10%; /* Se mueve hasta el borde derecho */
   }
 }
-@keyframes initialAnimation {
-  0% {
-    top: 29%;
-    left: 35%;
-  }
-  100% {
-    top: 10%; /* Se mueve hasta el borde derecho */
-    left: 5%;
-  }
-}
 @keyframes moveLeftCisco {
   0% {
     left: 18%;
@@ -638,3 +594,197 @@ header {
         top: 58%; /* Se mueve hasta el borde derecho */
     }
   }
+
+
+.datoskinal{
+    background-image: url("./sources/fondo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100vh;
+    display: flex;
+}
+
+.trabajos{
+    height: 70%;
+    width: 80%;
+    backdrop-filter: blur(15px);
+    margin: auto;
+    border: 2px solid #FDFCFD;
+    border-radius: 30px;
+    display: flex;
+    position: relative;
+}
+.logo_trabajos{
+    position: absolute;
+    width: 200px;
+    left: 2%;
+    top: 2%;
+}
+
+.trabajos_information{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.trabajos_information_title{
+    color: #FDFCFD;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.trabajos_information_subtitle{
+    color: #fdfcfdbc;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.trabajos_information_paragraph{
+    color: #FDFCFD;
+    font-size: 25px;
+    width: 60%;
+    text-align: center;
+}
+.trabajos_img{
+    width: 30%;
+    height: 100%;
+    object-fit:cover;
+    object-position: 50% 50%;
+    border-radius: 30px;
+}
+
+.separador_kinal{
+    background-color: #20346bff;
+    display: flex;
+    
+}
+
+.separador_kinal > svg{
+    height: 350px!important;
+    margin-left: 20%;
+}
+
+.separador_kinal_titulo{
+    font-size: 70px;
+    color: #FDFCFD;
+    font-weight: 700;
+    height: 90px;
+    margin: auto 0;
+}
+
+.masjoveneskinal{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.logo_trabajos-masjovenes{
+    position: absolute;
+    width: 200px;
+    right: 2%;
+    top: 2%;
+}
+
+
+.beneficiados{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.beneficiados_title{
+    font-size: 25px;
+    color: #20346bff;
+    font-weight: 700;
+    margin-bottom: 192px;
+}
+
+.beneficiados_figura{
+    position: relative;
+    background-color: #20346bff;
+    height: 40%;
+    width: 80%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.beneficiados_figura > span{
+    position: absolute;
+    color: #FDFCFD;
+    border-radius: 50%;
+    width: 16%;
+    height: 152%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -112%;
+    font-size: 45px;
+    font-weight: 700;
+}
+.beneficiados_figura_1{
+    left: 10%;
+    background-color: #ffbb39;
+}
+
+.beneficiados_figura_1::before{
+    content: "ESCUELA TÉCNICA";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 100%;
+    left: 16%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.beneficiados_figura_2{
+    left: 30%;
+    background-color: #840a41;
+}
+
+.beneficiados_figura_2::before{
+    content: "CICLO BÁSICO";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 100%;
+    left: 23%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.beneficiados_figura_3{
+    left: 50%;
+    background-color: #28326a;
+}
+
+.beneficiados_figura_3::before{
+    content: "DIVERSIFICADO";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 100%;
+    left: 21%;
+    font-size: 20px;
+    font-weight: 500;
+}   
+
+.beneficiados_figura_4{
+    left: 70%;
+    background-color: #f37828;
+}
+
+.beneficiados_figura_4::before{
+    content: "TOTAL";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 100%;
+    left: 40%;
+    font-size: 20px;
+    font-weight: 500;
+}

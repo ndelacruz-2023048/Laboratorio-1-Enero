@@ -788,3 +788,79 @@ header {
     font-size: 20px;
     font-weight: 500;
 }
+
+.footerkinal{
+    background-color: #20346bff;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 210px 15px 210px;
+}
+
+.footercolumns{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footercolumns_1{
+    width: 25%;
+}
+
+.footercolumns_2{
+    width: 40%;
+    display: flex;
+    gap: 50px;
+}
+
+.footercolumns_img{
+    width: 210px;
+}
+
+.footercolumns_paragraph{
+    color: #FDFCFD;
+    font-size: 15px;
+}
+
+.footercolumns_iconos{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 15px;
+    gap: 5px;
+}
+
+.footercolumns_iconos_facebok{
+    width: 30px;
+}
+
+.footercolumns_iconos_instagram{
+    width: 30px;
+}
+
+
+.footercolumns_iconos_youtube{
+    width: 35px;
+}
+
+.footercolumn_title{
+    font-weight: 500;
+    color: #FDFCFD;
+}
+
+.footercolumn_container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #fdfcfdb4;
+}
+.footercopyright{
+    display: flex;
+    border-top: 1px solid #fdfcfd41;
+    margin-top: 100px;
+}
+
+.textcopyright{
+    font-size: 12px;
+    color: #FDFCFD;
+    padding: 15px 0;
+}

@@ -23,7 +23,7 @@ svg {
 }
 
 
-header {
+.styles_bgblue{
     background-color: #20346bff;
     height: 100vh;
     display: flex;
@@ -37,6 +37,9 @@ header {
     margin: 0 auto;
     padding-top: 20px;
     z-index: 10;
+    position: absolute;
+    top: 5%;
+    left: 10%;
 }
 
 .navbar_options {
@@ -45,7 +48,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(44 64 117);
+    background-color: #fefcef;
     padding: 10px 25px;
     border-radius: 20px;
 }
@@ -56,7 +59,7 @@ header {
 }
 
 .navbarlist_li a {
-    color: white;
+    color: #000;
     font-size: 18px;
 }
 
@@ -156,7 +159,7 @@ header {
 }
 
 .socialmedia > a{
-    background-color: rgb(44 64 117);
+    background-color: rgb(44, 63, 117);
     border-radius: 50%;
     width: 45px;
     height: 45px;
@@ -187,12 +190,14 @@ header {
     width: auto;
     font-size: 70px;
     font-weight: 700;
+    color: #000;
 }
 
 
 
 .title_subtitle {
     font-size: 25px;
+    color: #000;
 }
 
 #logo {
@@ -1375,11 +1380,104 @@ header {
     height: 700px;
 }
 
-.header-gradient-1 {}
-
 .header-gradient {
     width: 100%;
     height: 200px;
     background: linear-gradient(98.85deg, rgba(18, 18, 18, 0.3) 0%, #121212 100%), linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, #121212 100%), #00f2ff;
 
+}
+
+/* Pagina de Profile */
+.styles_bgblue-white{
+    background: linear-gradient(to bottom, #FDFCFD 0%,#FDFCFD 10%, #dacead 50%, #dacead 65%,#FDFCFD 85%, #FDFCFD 100%);
+}
+
+.profilecontainer{
+    background: linear-gradient(to bottom, #FDFCFD 0%,#FDFCFD 10%, #dacead 50%, #dacead 65%,#FDFCFD 85%, #FDFCFD 100%);
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.profile_great{
+    position: absolute;
+    font-size: 200px;
+    top: 30%;
+    left: 26%;
+    font-family: "Ephesis", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.profile_great-2{
+    left: 54%;
+}
+
+.profile_name{
+    position: absolute;
+    font-weight: 700;
+    font-size: 200px;
+    width: 407px;
+    line-height: 150px;
+    bottom: 5%;
+    left: 5%;
+}
+
+.profile_shortdescription{
+    width: 235px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
+.profile_specialword{
+    position: absolute;
+    bottom: 12%;
+    right: 15%;
+    font-size: 120px;
+    font-weight: 500;
+}
+
+.profile_image{
+    background: linear-gradient(to bottom, transparent 0%, transparent 70%, #FDFCFD 100%), url(./sources/Nery-Perfil-2.png);
+    background-repeat: no-repeat;
+    height: 850px;
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    left: 36%;
+    background-size: cover;
+}
+
+.profile_col1{
+    height: 100vh;
+    width: 20%;
+    position: absolute;
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profile_col2{
+    height: 100vh;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile_col > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 0.1px solid #000;
+}
+
+.profile_col div > p{
+    color: #000;
+    font-size: 22px;
+    text-decoration: none;
+    width: 80%;
 }

@@ -869,7 +869,7 @@ header {
 /*Pagina Personal */
 
 .header {
-    background-image: url(./sources/Firefly\ 20240617120944.png);
+    background-image: url(./sources/Firefly\ 20240617120944.webp);
     height: 970px;
     background-size: cover;
     position: relative;
@@ -948,15 +948,14 @@ header {
     font-size: 15px;
     color: #fff;
     width: 550px;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }
 
 .reproductorMockup {
     background-image: linear-gradient(to top, transparent 20%, #240e2d 100%),
-        url(./sources/fondoVibFull.png);
+        url(./sources/fondoVibFull.webp);
     background-image: linear-gradient(to bottom, transparent 30%, #240e2d 100%),
-        url(./sources/fondoVibFull.png);
+        url(./sources/fondoVibFull.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -1058,7 +1057,6 @@ header {
 .tiempos__texto {
     color: #ab18eb;
     font-size: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .controles {
@@ -1106,8 +1104,6 @@ header {
 .anuncio1__parrafo {
     color: #fff;
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    ;
 }
 
 .reproduce2 {
@@ -1148,7 +1144,6 @@ header {
 .plan1__individual {
     color: #980dff;
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 
@@ -1255,7 +1250,6 @@ header {
 .container3-imagenes__texto {
     position: relative;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     margin-top: 15px;
 }
@@ -1263,7 +1257,6 @@ header {
 .container3-imagenes__artista {
     position: relative;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     margin-top: 5px;
     opacity: 0.5;
@@ -1304,7 +1297,6 @@ header {
 .footer-container__texto {
     color: #fff;
     font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 2;
 }
 

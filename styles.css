@@ -1439,7 +1439,7 @@ svg {
 }
 
 .profile_image{
-    background: linear-gradient(to bottom, transparent 0%, transparent 70%, #FDFCFD 100%), url(./sources/Nery-Perfil-2.png);
+    background: linear-gradient(to bottom, transparent 0%, transparent 60%, #FDFCFD 100%), url(./sources/Nery-Perfil-2.png);
     background-repeat: no-repeat;
     height: 850px;
     width: 500px;
